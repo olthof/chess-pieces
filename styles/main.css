@@ -1,0 +1,67 @@
+.frame {
+    text-align: center;
+}
+
+.control-panel {
+    padding: 20px;
+}
+
+.bishop {
+    background: url(/images/bishop.svg);
+}
+.king {
+    background: url(/images/bishop.svg);
+}
+.knight {
+    background: url(/images/bishop.svg);
+}
+.pawn {
+    background: url(/images/bishop.svg);
+}
+.queen {
+    background: url(/images/bishop.svg);
+}
+.rook {
+    background: url(/images/bishop.svg);
+}
+
+.piece {
+    font-size: 0;
+    text-indent: -9999px;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.chess-board {
+    background: lightgray;
+    border: 10px solid #000;
+    max-width: 100vw;
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    row-gap: 0;
+    column-gap: 0;
+}
+
+.chess-board .tile {
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.tile:nth-child(1) ~ div:nth-child(-2n + 8),
+.tile:nth-child(8) ~ div:nth-child(-2n + 15),
+.tile:nth-child(16) ~ div:nth-child(-2n + 24),
+.tile:nth-child(24) ~ div:nth-child(-2n + 31),
+.tile:nth-child(32) ~ div:nth-child(-2n + 40),
+.tile:nth-child(40) ~ div:nth-child(-2n + 47),
+.tile:nth-child(48) ~ div:nth-child(-2n + 56),
+.tile:nth-child(56) ~ div:nth-child(-2n + 63) {
+    background-color: #000;
+    color: #fff;
+}
