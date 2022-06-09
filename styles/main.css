@@ -4,25 +4,35 @@
 
 .control-panel {
     padding: 20px;
+    margin: auto;
+}
+
+.control-panel > * {
+    display: inline-block;
+}
+
+.piece-select {
+    display: block;
+    margin: auto;
 }
 
 .bishop {
     background: url(/images/bishop.svg);
 }
 .king {
-    background: url(/images/bishop.svg);
+    background: url(/images/king.svg);
 }
 .knight {
-    background: url(/images/bishop.svg);
+    background: url(/images/knight.svg);
 }
 .pawn {
-    background: url(/images/bishop.svg);
+    background: url(/images/pawn.svg);
 }
 .queen {
-    background: url(/images/bishop.svg);
+    background: url(/images/queen.svg);
 }
 .rook {
-    background: url(/images/bishop.svg);
+    background: url(/images/rook.svg);
 }
 
 .piece {
